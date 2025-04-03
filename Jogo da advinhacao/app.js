@@ -1,9 +1,7 @@
 alert("Vamos começar o nosso jogo!");
 
 //Sistema de dificuldade
-let dificuldade = prompt(
-  "Escolha uma dificuldade: \n1 - Fácil \n2 - Médio \n3 - Difícil"
-);
+let dificuldade = prompt("Escolha uma dificuldade: \n1 - Fácil \n2 - Médio \n3 - Difícil");
 
 let numeroMaximo; // maximo do intervalo do numero secreto
 
@@ -18,9 +16,7 @@ if (dificuldade == 1) {
 let numeroSecreto = parseInt(Math.random() * numeroMaximo + 1); // Math.random() gera um número entre 0 e 1, multiplicamos por numeromaximo para ter um número entre 1 (pois eu fiz +1) e o numeromaximo
 console.log("Número secreto: " + numeroSecreto);
 
-alert(
-  `Eu escolhi um número entre 1 e ${numeroMaximo}, você consegue adivinhar?`
-);
+alert(`Eu escolhi um número entre 1 e ${numeroMaximo}, você consegue adivinhar?`);
 
 let chute;
 let tentativas = 1;
